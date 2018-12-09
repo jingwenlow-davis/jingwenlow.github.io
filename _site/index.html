@@ -1,8 +1,58 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- EDUCATION -->
+	<title>Jingwen Low</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://localhost:4000/">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+</head>
+
+
+<body>
+	<aside>
+	<div class="container">
+		<nav class="navbar">
+			<div id="myNavbar">
+				<ul>
+					<li><a href="#education" class="myNavbar">Education</a></li>
+					<li><a href="#experience" class="myNavbar">Experience</a></li>
+					<li><a href="#contact" class="myNavbar">Contact</a></li>
+					<li><a href="/blog">Blog</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<!-- <h1><a href="">Jingwen<br>Low</a></h1> -->
+
+
+
+	<div id="one" class="container" data-color="#1ABC9C">
+			<div class="title">
+				<h1><a href="">Jingwen<br>Low</a></h1>
+			</div>
+
+			<div class="description">
+					<p class="bio">4th year Computer Science and Engineering student at University of California, Davis.<br>~ Expected graduation June 2019 ~<br>Currently a full stack developer at ASUCD Creative Media, looking for a full time job after graduation.</p>
+					<p>add contact button</p>
+			</div>
+	</div>
+</header>
+
+	<main>
+		<article>
+			<!-- EDUCATION -->
 <div id="education" class="container" data-color="#9B59B6">
     <h1>Education</h1>
 
@@ -131,3 +181,62 @@ to further improve DevOps</li>
 </div>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">&#9651;</button>
+
+		</article>
+		<footer>
+	<p><a href=""></p>
+</footer>
+
+	</main>
+</body>
+
+<!-- <script type="text/javascript" src="/css/main.css"></script> -->
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+
+</script>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</html>
