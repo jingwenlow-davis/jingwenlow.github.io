@@ -13,6 +13,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+<link rel="shortcut icon" href="/assets/img/myAvatar.png" type="image">
 
 </head>
 
@@ -23,10 +24,11 @@
 		<nav class="navbar">
 			<div id="myNavbar">
 				<ul>
-					<li><a href="#education" class="myNavbar">Education</a></li>
+					<li id="avatar"><a href="http://localhost:4000" class="myNavbar"><img src="/assets/img/myAvatar.png" height="15px"></a></li>
+					<li><a href="#contact" class="myNavbar">Contact</a></li>
 					<li><a href="#experience" class="myNavbar">Experience</a></li>
 					<li><a href="#projects" class="myNavbar">Projects</a></li>
-					<li><a href="#contact" class="myNavbar">Contact</a></li>
+					<li><a href="#education">Education</a></li>
 					<!-- <li><a href="/blog">Blog</a></li> -->
 				</ul>
 			</div>
@@ -37,7 +39,7 @@
 <header>
 	<div id="one" class="container" data-color="#1ABC9C">
 			<div class="title">
-				<h1><a href="">Jingwen<br>Low</a></h1>
+				<h1><a href="http://localhost:4000">Jingwen<br>Low</a></h1>
 			</div>
 
 			<div class="description">
@@ -86,6 +88,60 @@
     </div> -->
     <br>
 </div>
+
+
+
+
+<hr>
+<!-- PROJECTS -->
+<div id="projects" class="container" data-color="#f88f18">
+    <h1>Projects</h1>
+
+    <div id="cards">
+      <div class="card">
+        <img src="/assets/img/unitrans.png" alt="Avatar" style="width:100%">
+        <div class="container">
+          <a href="http://unitrans.ucdavis.edu" target="_blank"><h4><b>Unitrans</b></h4></a>
+          <p>Django website for UC Davis bus system.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/assets/img/sunsetfest.png" alt="Avatar" style="width:100%">
+        <div class="container">
+          <a href="https://sunsetfest.ucdavis.edu" target="_blank"><h4><b>Sunset Fest</b></h4></a>
+          <p>Django website for Sunset Fest sponsors to submit payment.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/assets/img/fridgeid.png" alt="Avatar" style="width:100%">
+        <div class="container">
+          <a href="http://fridgeid.ucdavis.edu" target="_blank"><h4><b>FridgeID</b></h4></a>
+          <p>Django website to keep track of rental fridges.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/assets/img/fridgerental.png" alt="Avatar" style="width:100%">
+        <div class="container">
+          <a href="http://fridgerental.ucdavis.edu" target="_blank"><h4><b>FridgeRental</b></h4></a>
+          <p>Website for the fridgerental service, allows freshmen to order a fridge to rent.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/assets/img/bikebuy.png" alt="Avatar" style="width:100%">
+        <div class="container">
+          <a href="https://asucd-bikebuy.ucdavis.edu" target="_blank"><h4><b>Bike Buy</b></h4></a>
+          <p>Website for Aggie Bike Buy, allows people to buy bikes/accessories.</p>
+        </div>
+      </div>
+    </div>
+<br>
+</div>
+
+
 
 
 
@@ -156,20 +212,6 @@ to further improve DevOps</li>
 
 
 <hr>
-<!-- PROJECTS -->
-<div id="projects" class="container" data-color="#f88f18">
-    <h1>Projects</h1>
-
-    <div>
-      In Progress
-    </div>
-
-</div>
-
-
-
-
-<hr>
 <!-- CONTACT -->
 <div id="contact" class="container" data-color="#f88f18">
     <h1>Contact</h1>
@@ -194,36 +236,11 @@ to further improve DevOps</li>
 
 		</article>
 		<footer>
-	<p><a href=""></p>
 </footer>
 
 	</main>
 </body>
 
 
-<!-- <script type="text/javascript" src="{}"></script> -->
-
-	<script type="text/javascript">
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-	</script>
-
-
-
+<script type="text/javascript" src="/assets/js/main.js"></script>
 </html>
