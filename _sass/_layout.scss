@@ -30,6 +30,9 @@ h1 {
 h2 {
 	font-size: 32px;
 }
+h2, h4 {
+  margin: 18px 0px;
+}
 a,
 a:visited {
 	color: $link-color;
@@ -55,6 +58,9 @@ header {
 		text-align: center;
 		color: white;
 	}
+  p {
+    line-height: 2em;
+  }
   button {
     background-color: $main; /* Green */
     border: none;
